@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # proteger archivos de configuración
+    <FilesMatch "^(database|config)\.php$">
+        Order deny,allow
+        Deny from all
+    </FilesMatch>
+    
+    # permitir acceso a getEvents.php dentro de includes/config
+    RewriteCond %{REQUEST_URI} ^/UnderTangoNEW/includes/config/getEvents\.php$ [NC]
+    RewriteRule ^ - [L]
+    
+    # prevenir acceso directo a includes excepto getEvents.php
+    RewriteRule ^includes/ - [F,L]
+    
+    # URLs amigables
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(about|contact|services)$ $1.php [L]
+</IfModule>
