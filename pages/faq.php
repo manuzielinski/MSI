@@ -9,25 +9,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preguntas Frecuentes | UnderTango Club</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="/styles/navbar.css">
-  <link rel="stylesheet" href="/styles/footer.css">
-  <link rel="stylesheet" href="/styles/faq.css">
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/faq.css">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
   <nav id="navbar">
     <div class="logo">
-      <img src="/assets/Under-logo-transparente.png" alt="UnderTango Logo">
+      <img src="../assets/images/Under-logo-transparente.png" alt="UnderTango Logo">
     </div>
     <button id="menu-toggle" aria-label="Toggle menu">
       <i class="fas fa-bars"></i>
     </button>
     <ul id="navbar-menu">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../index.html#shows">Shows</a></li>
-      <li><a href="../index.html#classes">Clases</a></li>
-      <li><a href="../index.html#fashion">Moda</a></li>
-      <li><a href="/pages/reservas.html">Reservas</a></li>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../index.php#shows">Shows</a></li>
+      <li><a href="../index.php#classes">Clases</a></li>
+      <li><a href="../index.php#fashion">Moda</a></li>  
+      <li><a href="/pages/reservas.php">Reservas</a></li>
     </ul>
   </nav>
 
@@ -172,7 +172,7 @@
   </section>
 
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
 
-<script src="/scripts/burguer.js"></script>
-<script src="/scripts/faq.js"></script>
+<script src="../assets/js/burguer.js"></script>
+<script src="../assets/js/faq.js"></script>

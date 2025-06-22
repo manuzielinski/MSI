@@ -19,11 +19,11 @@
       <i class="fas fa-bars"></i>
     </button>
     <ul id="navbar-menu">
-      <li><a href="/index.php">Inicio</a></li>
-      <li><a href="/index.php#historia">Historia</a></li>
-      <li><a href="/index.php#news">Noticias</a></li>
-      <li><a href="/pages/reservas.php#reserva">Contacto</a></li>
-      <li><a href="/pages/faq.php">Preguntas Frecuentes</a></li>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../index.php#historia">Historia</a></li>
+      <li><a href="../index.php#news">Noticias</a></li>
+      <li><a href="../pages/reservas.php#reserva">Contacto</a></li>
+      <li><a href="../pages/faq.php">Preguntas Frecuentes</a></li>
     </ul>
   </nav>
 

@@ -1,10 +1,10 @@
 <?php
-$pageTitle = "Clases Privadas - UnderTango Club";
-include 'header.php';
+  $pageTitle = "Clases Privadas - UnderTango Club";
+  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header.php';
 ?>
 
 <section class="hero">
-  <img src="/assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image">
+  <img src="/UnderTangoNEW/assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image">
   <div class="hero-content">
     <h1 class="hero-title">Clases Privadas de Tango</h1>
     <p class="hero-subtitle">Disfruta de la atención personalizada en nuestras clases privadas de tango, disponibles todos los días en Puerto Iguazú, Misiones.</p>
@@ -74,39 +74,34 @@ include 'header.php';
 
 <section class="other-disciplines">
   <div class="container">
-      <h2 class="disciplines-title">Clases de Otras Disciplinas</h2>
-      <p class="disciplines-intro">
-          En UnderTango Club ofrecemos una variedad de disciplinas adicionales para complementar tu formación y desarrollo artístico. Descubre nuestras clases de piano, inglés, y formación profesional para artistas.
-      </p>
+    <h2 class="disciplines-title">Clases de Otras Disciplinas</h2>
+    <p class="disciplines-intro">
+      En UnderTango Club ofrecemos una variedad de disciplinas adicionales para complementar tu formación y desarrollo artístico. Descubre nuestras clases de piano, inglés, y formación profesional para artistas.
+    </p>
 
-      <div class="disciplines-grid">
-          <!-- Clases de Piano -->
-          <div class="discipline-card">
-              <i class="fas fa-music"></i>
-              <h3>Clases de Piano</h3>
-              <p>
-                  Aprende piano de la mano de profesores experimentados. Ya sea que quieras iniciarte en la música o perfeccionar tus habilidades, estas clases están diseñadas para todos los niveles.
-              </p>
-          </div>
-
-          <!-- Clases de Inglés -->
-          <div class="discipline-card">
-              <i class="fas fa-language"></i>
-              <h3>Clases de Inglés</h3>
-              <p>
-                  Mejora tu inglés para comunicarte con el mundo. Nuestras clases están enfocadas en el aprendizaje práctico y efectivo del idioma.
-              </p>
-          </div>
-
-          <!-- Formación Profesional para Artistas -->
-          <div class="discipline-card">
-              <i class="fas fa-user-tie"></i>
-              <h3>Formación Profesional para Artistas</h3>
-              <p>
-                  Potencia tu carrera artística con nuestras clases de formación profesional. Aprenderás sobre gestión de proyectos, estrategias de marketing, y mucho más.
-              </p>
-          </div>
+    <div class="disciplines-grid">
+      <div class="discipline-card">
+        <i class="fas fa-music"></i>
+        <h3>Clases de Piano</h3>
+        <p>
+          Aprende piano de la mano de profesores experimentados. Ya sea que quieras iniciarte en la música o perfeccionar tus habilidades, estas clases están diseñadas para todos los niveles.
+        </p>
       </div>
+      <div class="discipline-card">
+        <i class="fas fa-language"></i>
+        <h3>Clases de Inglés</h3>
+        <p>
+          Mejora tu inglés para comunicarte con el mundo. Nuestras clases están enfocadas en el aprendizaje práctico y efectivo del idioma.
+        </p>
+      </div>
+      <div class="discipline-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Formación Profesional para Artistas</h3>
+        <p>
+          Potencia tu carrera artística con nuestras clases de formación profesional. Aprenderás sobre gestión de proyectos, estrategias de marketing, y mucho más.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -120,4 +115,4 @@ include 'header.php';
   </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/footer.php'; ?>

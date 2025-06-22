@@ -1,8 +1,9 @@
 <?php
+define('BASE_URL', '/UnderTangoNEW');
+
 $page = $page ?? '';
 $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguazú';
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,24 +13,21 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
   <title><?= htmlspecialchars($pageTitle) ?></title>
   <meta name="description" content="Descubre el auténtico tango en Iguazú con nuestras clases grupales y privadas, espectáculos de milonga y moda exclusiva. ¡Vive la pasión del tango en la triple frontera!">
 
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/navbar.css">
-  <link rel="stylesheet" href="./assets/css/timeline.css">
-  <link rel="stylesheet" href="./assets/css/pilars.css">
-  <link rel="stylesheet" href="./assets/css/burguer.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/navbar.css">
 
-  <?php if ($page === 'moda'): ?>
-    <link rel="stylesheet" href="../assets/css/moda.css">
-    <link rel="stylesheet" href="../assets/css/moda-fixes.css">
-    <link rel="stylesheet" href="../assets/css/logo-fix.css">
-    <link rel="stylesheet" href="../assets/css/social-icons-fix.css">
-    <link rel="stylesheet" href="../assets/css/footer-fix.css">
-  <?php endif; ?>
+  <?php
+  if ($page === 'moda') {
 
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  } elseif ($page === 'reservas') {
+    echo '<link rel="stylesheet" href="' . BASE_URL . '/assets/css/reservas.css">';
+  }
+  ?>
+
+  <link rel="icon" type="image/x-icon" href="<?= BASE_URL ?>/assets/images/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
+  <!-- Scripts de Google -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDX0M5KKDM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -41,14 +39,14 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
 <body>
   <nav id="navbar">
     <div class="logo">
-      <img src="../assets/images/Under-logo-transparente.png" alt="Logotipo de UnderTango Club en Iguazú">
+      <img src="<?= BASE_URL ?>/assets/images/Under-logo-transparente.png" alt="Logotipo de UnderTango Club en Iguazú">
     </div>
     <button id="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     <ul id="navbar-menu">
-      <li><a href="/index.php#video-slider">Inicio</a></li>
-      <li><a href="/index.php#historia">Historia</a></li>
-      <li><a href="/index.php#news">Noticias</a></li>
-      <li><a href="/pages/reservas.php#reserva">Contacto</a></li>
-      <li><a href="/pages/faq.php">Preguntas Frecuentes</a></li>
+      <li><a href="<?= BASE_URL ?>../index.php#video-slider">Inicio</a></li>
+      <li><a href="<?= BASE_URL ?>../index.php#historia">Historia</a></li>
+      <li><a href="<?= BASE_URL ?>../index.php#news">Noticias</a></li>
+      <li><a href="<?= BASE_URL ?>../pages/reservas.php#reserva">Contacto</a></li>
+      <li><a href="<?= BASE_URL ?>../pages/faq.php">Preguntas Frecuentes</a></li>
     </ul>
   </nav>

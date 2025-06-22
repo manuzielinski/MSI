@@ -1,7 +1,42 @@
 <?php
+$page = 'clases';
 $pageTitle = "Clases de Tango | UnderTango";
-include __DIR__ . '/../header.php';
+
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo $pageTitle; ?></title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/clases-grupales.css"> 
+
+  <!-- El favicon se enlaza con la ruta absoluta desde la raíz del sitio -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+
+<body>
+  <!-- Tu archivo faq.php tiene su propia barra de navegación. Si el header.php ya la incluye, -->
+  <!-- esta sección podría estar duplicada. La dejo para que coincida con tu ejemplo. -->
+  <nav id="navbar">
+    <div class="logo">
+      <img src="../assets/images/Under-logo-transparente.png" alt="UnderTango Logo">
+    </div>
+    <button id="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul id="navbar-menu">
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../index.php#shows">Shows</a></li>
+      <li><a href="../index.php#classes">Clases</a></li>
+      <li><a href="../index.php#fashion">Moda</a></li>  
+      <li><a href="/pages/reservas.php">Reservas</a></li>
+    </ul>
+  </nav>
 
 <section class="image-text-section">
   <div class="image-text-row">
@@ -58,7 +93,7 @@ include __DIR__ . '/../header.php';
         </div>
       </a>
 
-      <a href="https://hotmart.com/es/marketplace/productos/20-lecciones-de-tango/F62016758K" class="highlight-card">
+      <a href="https://hotmart.com/es/marketplace/productos/20-lecciones-de-tango/F62016758K" class="highlight-card" target="_blank">
         <div>
           <i class="fas fa-globe"></i>
           <h3>Cursos Online</h3>
@@ -98,10 +133,10 @@ include __DIR__ . '/../header.php';
         <img src="/assets/tango-class-4.jpg" alt="Clase de tango 4" />
       </div>
       <div class="gallery-item">
-        <img src="/assets/2024-7-13.jpg" alt="Clase de tango 4" />
+        <img src="/assets/2024-7-13.jpg" alt="Clase de tango 5" />
       </div>
       <div class="gallery-item">
-        <img src="/assets/grupal6.png" alt="Clase de tango 4" />
+        <img src="/assets/grupal6.png" alt="Clase de tango 6" />
       </div>
     </div>
   </div>
@@ -120,4 +155,13 @@ include __DIR__ . '/../header.php';
   </div>
 </section>
 
-<?php include __DIR__ . '/../footer.php'; ?>
+<?php 
+// SOLUCIÓN 3: Se corrige el include del footer para que use una ruta relativa, igual que en faq.php
+include '../includes/footer.php'; 
+?>
+
+<!-- No olvides incluir los scripts necesarios al final del body -->
+<script src="../assets/js/burguer.js"></script>
+
+</body>
+</html>

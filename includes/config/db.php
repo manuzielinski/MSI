@@ -1,5 +1,4 @@
 <?php
-// db.php
 $host = '127.0.0.1';
 $db   = 'under_tango';
 $user = 'root';

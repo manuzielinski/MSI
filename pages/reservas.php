@@ -1,8 +1,12 @@
 <?php
 $page = 'reservas';
 $pageTitle = 'Reservas de Shows | Tango Triple Frontera';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+
+// Esto incluye el header, que ahora se encarga de cargar el CSS correcto.
+include '../includes/header2.php';
 ?>
+
+<!-- Ya no hay <link> aquí. El header se encarga de todo. -->
 
 <section class="shows-section" id="shows">
     <div class="container">
@@ -87,4 +91,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
   </section>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+<?php
+include '../includes/footer.php';
+?>
