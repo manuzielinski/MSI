@@ -14,7 +14,7 @@
       <h3>Clases</h3>
       <ul>
         <li><a href="../pages/clasesGrupales.php">Clases Grupales</a></li>
-        <li><a href="../pages/clasesprivadas.php">Clases Privadas</a></li>
+        <li><a href="../pages/clasesPrivadas.php">Clases Privadas</a></li>
         <li><a href="https://hotmart.com/es/marketplace/productos/20-lecciones-de-tango/F62016758K" target="_blank">Cursos Online</a></li>
       </ul>
     </div>
