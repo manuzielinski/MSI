@@ -2,7 +2,7 @@ async function loadEvents() {
   showLoading(true);
 
   try {
-    const url = `/UnderTangoNEW/includes/config/getEvents.php?year=${currentYear}&month=${currentMonth + 1}`
+    const url = `../includes/getEvents.php?year=${currentYear}&month=${currentMonth + 1}`
     console.log("Cargando eventos desde:", url);
 
     const response = await fetch(url);
