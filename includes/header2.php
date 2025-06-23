@@ -36,7 +36,7 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
 <body>
   <nav id="navbar">
     <div class="logo">
-      <img src="<?= BASE_URL ?>/assets/images/Under-logo-transparente.png" alt="Logotipo de UnderTango Club en Iguazú">
+      <img src="../assets/images/Under-logo-transparente.png" alt="Logotipo de UnderTango Club en Iguazú" />
     </div>
     <button id="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     <ul id="navbar-menu">
