@@ -158,17 +158,17 @@
     <div class="footer-section">
       <h3>Clases</h3>
       <ul>
-        <li><a href="../pages/clasesGrupales.html">Clases Grupales</a></li>
-        <li><a href="../pages/clasesprivadas.html">Clases Privadas</a></li>
+        <li><a href="../pages/clasesGrupales.php">Clases Grupales</a></li>
+        <li><a href="../pages/clasesprivadas.php">Clases Privadas</a></li>
         <li><a href="https://hotmart.com/es/marketplace/productos/20-lecciones-de-tango/F62016758K">Cursos Online</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <h3>Shows</h3>
       <ul>
-        <li><a href="../pages/usersCalendar.html">Próximos Shows</a></li>
-        <li><a href="../pages/reservas.html">Reservas</a></li>
-        <li><a href="../pages/artistas.html">Artistas</a></li>
+        <li><a href="../pages/usersCalendar.php">Próximos Shows</a></li>
+        <li><a href="../pages/reservas.php">Reservas</a></li>
+        <li><a href="../pages/artistas.hphp">Artistas</a></li>
       </ul>
     </div>
     <div class="footer-section">
@@ -203,7 +203,7 @@
   </div>
 </footer>
 
-  <script src="../scripts/burguer.js"></script>
-  <script src="../scripts/grupales.js"></script>
+  <script src="../assets/js/burguer.js"></script>
+  <script src="../assets/js/grupales.js"></script>
 </body>
 </html>
