@@ -1,5 +1,5 @@
 <?php
-$page = 'clasesPrivadas';
+$page = 'clasesprivadas';
 $pageTitle = "Clases Privadas - UnderTango Club";
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
