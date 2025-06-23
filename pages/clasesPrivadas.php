@@ -11,15 +11,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <title><?php echo $pageTitle; ?></title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/css/navbar.css" />
-  <link rel="stylesheet" href="../assets/css/footer.css" />
   <link rel="stylesheet" href="../assets/css/clases-grupales.css" />
 </head>
 
 <body>
 
 <section class="hero">
-  <img src="../assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image" />
+  <img src="../assets/images/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image" />
   <div class="hero-content">
     <h1 class="hero-title">Clases Privadas de Tango</h1>
     <p class="hero-subtitle">

@@ -13,9 +13,8 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
   <title><?= htmlspecialchars($pageTitle) ?></title>
   <meta name="description" content="Descubre el auténtico tango en Iguazú con nuestras clases grupales y privadas, espectáculos de milonga y moda exclusiva. ¡Vive la pasión del tango en la triple frontera!">
 
-  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/footer.css">
   <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/navbar.css">
-
+  <link rel="stylesheet" href="./assets/css/burguer.css">
   <?php
   if ($page === 'moda') {
 
