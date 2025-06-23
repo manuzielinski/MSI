@@ -1,13 +1,16 @@
 <?php
 header('Content-Type: application/json');
 
-// Configuración de la base de datos
-$host = '127.0.0.1';
-$db   = 'under_tango';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+// Configuración de la base de datos Supabase (PostgreSQL)
+$host = 'db.kisorxidfihpxlumdoiu.supabase.co';
+$db   = 'postgres';
+$user = 'postgres';
+$pass = 'underPass3452PM112klk3op';
+$port = '5432';
+$charset = 'utf8';
+
+$dsn = "pgsql:host=$host;port=$port;dbname=$db;user=$user;password=$pass";
+
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -22,7 +25,7 @@ $startDate = sprintf('%04d-%02d-01', $year, $month);
 $endDate = date('Y-m-t', strtotime($startDate));
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, null, null, $options);
 
     $stmt = $pdo->prepare("SELECT id, fecha, hora, lugar, interprete FROM calendario WHERE fecha BETWEEN :start AND :end");
     $stmt->execute(['start' => $startDate, 'end' => $endDate]);
@@ -33,7 +36,7 @@ try {
         return [
             "id" => $row['id'],
             "fields" => [
-                "nombre" => $row['interprete'], // usamos 'interprete' como 'nombre' del evento
+                "nombre" => $row['interprete'],
                 "fecha" => $row['fecha'],
                 "hora" => $row['hora'],
                 "lugar" => $row['lugar']

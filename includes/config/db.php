@@ -1,8 +1,8 @@
 <?php
-$host = '127.0.0.1';
-$db   = 'under_tango';
-$user = 'root';
-$pass = '';
+$host = 'db.be-mons1.bengt.wasmernet.com';
+$db   = 'underTango';
+$user = '8fc8dea571d98000632b0bb3169b';
+$pass = '06858fc8-dea5-738d-8000-9c91a7ec74ba';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
