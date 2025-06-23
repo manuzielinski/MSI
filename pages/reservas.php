@@ -7,6 +7,7 @@ include '../includes/header2.php';
 ?>
 
 <link rel="stylesheet" href="../assets/css/navbar.css" />
+<link rel="stylesheet" href="../assets/css/reservas.css" />
 <link rel="stylesheet" href="../assets/css/footer.css" />
 
 <section class="shows-section" id="shows">

@@ -4,6 +4,8 @@ $pageTitle = 'Nuestro Taller | UnderTango';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header2.php';
 ?>
 <link rel="stylesheet" href="../assets/css/navbar.css" />
+<link rel="stylesheet" href="../assets/css/moda.css" />
+<link rel="stylesheet" href="../assets/css/moda-fixes.css" />
 <link rel="stylesheet" href="../assets/css/footer.css" />
 <div class="hero">
     <h1>Nuestro Taller de Costuras</h1>
