@@ -64,7 +64,7 @@
       <h2>Clases de Tango en Iguazú</h2>
       <p>Aprende de los mejores maestros y vive la esencia del tango en la frontera con Brasil y Paraguay.</p>
       <div class="button-group">
-        <a href="pages/clasesprivadas.php" class="action-button">Clases Privadas</a>
+        <a href="pages/clasesPrivadas.php" class="action-button">Clases Privadas</a>
         <a href="pages/clasesGrupales.php" class="action-button">Clases Grupales</a>
       </div>
     </div>

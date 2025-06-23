@@ -6,7 +6,8 @@ $pageTitle = 'Reservas de Shows | Tango Triple Frontera';
 include '../includes/header2.php';
 ?>
 
-<!-- Ya no hay <link> aquí. El header se encarga de todo. -->
+<link rel="stylesheet" href="../assets/css/navbar.css" />
+<link rel="stylesheet" href="../assets/css/footer.css" />
 
 <section class="shows-section" id="shows">
     <div class="container">

@@ -1,9 +1,10 @@
 <?php
 $page = 'moda';
 $pageTitle = 'Nuestro Taller | UnderTango';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header2.php';
 ?>
-
+<link rel="stylesheet" href="../assets/css/navbar.css" />
+<link rel="stylesheet" href="../assets/css/footer.css" />
 <div class="hero">
     <h1>Nuestro Taller de Costuras</h1>
     <p>Donde la magia de la moda tanguera cobra vida</p>
@@ -17,7 +18,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         Trabajamos con un equipo talentoso de modistas, costureras y ayudantes provenientes del norte misionero. Su experiencia y dedicación se reflejan en cada prenda que creamos, fusionando la tradición del tango con la innovación en el diseño.
     </p>
     <div class="logo-container">
-        <img src="/assets/moda-logo.png" alt="UnderTango Moda Logo" class="taller-logo">
+        <img src="../assets/images/moda-logo.png" alt="UnderTango Moda Logo" class="taller-logo">
     </div>
 </section>
 
@@ -29,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="productos-container">
         <div class="producto">
             <figure class="producto-img">
-                <img src="/assets/EclipseDeMedianoche.png" alt="Vestido Eclipse de Medianoche">
+                <img src="../assets/images/EclipseDeMedianoche.png" alt="Vestido Eclipse de Medianoche">
             </figure>
             <div class="producto-content">
                 <h3>Eclipse de Medianoche</h3>
@@ -39,7 +40,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="producto">
             <figure class="producto-img">
-                <img src="/assets/BrumaDePlata.png" alt="Accesorios Bruma de Plata">
+                <img src="../assets/images/BrumaDePlata.png" alt="Accesorios Bruma de Plata">
             </figure>
             <div class="producto-content">
                 <h3>Bruma de Plata</h3>
@@ -49,7 +50,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="producto">
             <figure class="producto-img">
-                <img src="/assets/GalardonNocturno.png" alt="Remeras Galardón Nocturno">
+                <img src="../assets/images/GalardonNocturno.png" alt="Remeras Galardón Nocturno">
             </figure>
             <div class="producto-content">
                 <h3>Galardón Nocturno</h3>
@@ -59,7 +60,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="producto">
             <figure class="producto-img">
-                <img src="/assets/GalanArgentino.png" alt="Zapatos Galán Argentino">
+                <img src="../assets/images/GalanArgentino.png" alt="Zapatos Galán Argentino">
             </figure>
             <div class="producto-content">
                 <h3>Galán Argentino</h3>
