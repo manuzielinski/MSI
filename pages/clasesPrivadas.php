@@ -1,11 +1,25 @@
 <?php
-  $page = 'clasesprivadas';
-  $pageTitle = "Clases Privadas - UnderTango Club";
-  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header.php';
+$page = 'clasesPrivadas';
+$pageTitle = "Clases Privadas - UnderTango Club";
+
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?php echo $pageTitle; ?></title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/clases-grupales.css" />
+</head>
+
+<body>
+
 <section class="hero">
-  <img src="/UnderTangoNEW/assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image" />
+  <img src="../assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image" />
   <div class="hero-content">
     <h1 class="hero-title">Clases Privadas de Tango</h1>
     <p class="hero-subtitle">
@@ -118,4 +132,9 @@
   </div>
 </section>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
+
+<script src="../assets/js/burguer.js"></script>
+
+</body>
+</html>
