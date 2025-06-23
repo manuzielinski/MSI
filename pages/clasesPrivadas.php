@@ -1,14 +1,17 @@
 <?php
+  $page = 'clasesprivadas';
   $pageTitle = "Clases Privadas - UnderTango Club";
-  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header2.php';
 ?>
 
 <section class="hero">
-  <img src="/UnderTangoNEW/assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image">
+  <img src="/UnderTangoNEW/assets/tango-hero.jpg" alt="Tango dancers silhouette" class="hero-image" />
   <div class="hero-content">
     <h1 class="hero-title">Clases Privadas de Tango</h1>
-    <p class="hero-subtitle">Disfruta de la atención personalizada en nuestras clases privadas de tango, disponibles todos los días en Puerto Iguazú, Misiones.</p>
-    <a href="https://wa.me/+5493757618270" class="hero-button">
+    <p class="hero-subtitle">
+      Disfruta de la atención personalizada en nuestras clases privadas de tango, disponibles todos los días en Puerto Iguazú, Misiones.
+    </p>
+    <a href="https://wa.me/+5493757618270" class="hero-button" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp"></i>
       Reserva tu Clase por WhatsApp
     </a>
@@ -108,7 +111,7 @@
 <section class="contact" id="contact">
   <div class="container">
     <h2 class="contact-title">Reserva tu Clase</h2>
-    <a href="https://wa.me/+5493757618270" class="contact-button">
+    <a href="https://wa.me/+5493757618270" class="contact-button" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp"></i>
       Contáctanos por WhatsApp
     </a>

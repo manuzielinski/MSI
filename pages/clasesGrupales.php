@@ -15,13 +15,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/clases-grupales.css"> 
 
-  <!-- El favicon se enlaza con la ruta absoluta desde la raíz del sitio -->
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 
 <body>
-  <!-- Tu archivo faq.php tiene su propia barra de navegación. Si el header.php ya la incluye, -->
-  <!-- esta sección podría estar duplicada. La dejo para que coincida con tu ejemplo. -->
   <nav id="navbar">
     <div class="logo">
       <img src="../assets/images/Under-logo-transparente.png" alt="UnderTango Logo">
@@ -156,11 +153,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <?php 
-// SOLUCIÓN 3: Se corrige el include del footer para que use una ruta relativa, igual que en faq.php
 include '../includes/footer.php'; 
 ?>
 
-<!-- No olvides incluir los scripts necesarios al final del body -->
 <script src="../assets/js/burguer.js"></script>
 
 </body>
