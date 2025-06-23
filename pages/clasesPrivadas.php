@@ -1,7 +1,7 @@
 <?php
   $page = 'clasesprivadas';
   $pageTitle = "Clases Privadas - UnderTango Club";
-  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header2.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/UnderTangoNEW/includes/header.php';
 ?>
 
 <section class="hero">
@@ -101,7 +101,7 @@
         <i class="fas fa-user-tie"></i>
         <h3>Formación Profesional para Artistas</h3>
         <p>
-          Potencia tu carrera artística con nuestras clases de formación profesional. Aprenderás sobre gestión de proyectos, estrategias de marketing, y mucho más.
+          Potenciá tu carrera artística con nuestras clases de formación profesional. Aprenderás sobre gestión de proyectos, estrategias de marketing, y mucho más.
         </p>
       </div>
     </div>
