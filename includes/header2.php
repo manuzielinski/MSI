@@ -40,10 +40,10 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
     </div>
     <button id="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     <ul id="navbar-menu">
-      <li><a href="<?= BASE_URL ?>../index.php#video-slider">Inicio</a></li>
-      <li><a href="<?= BASE_URL ?>../index.php#historia">Historia</a></li>
-      <li><a href="<?= BASE_URL ?>../index.php#news">Noticias</a></li>
-      <li><a href="<?= BASE_URL ?>../pages/reservas.php#reserva">Contacto</a></li>
-      <li><a href="<?= BASE_URL ?>../pages/faq.php">Preguntas Frecuentes</a></li>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../index.php#historia">Historia</a></li>
+      <li><a href="../index.php#news">Noticias</a></li>
+      <li><a href="../pages/reservas.php#reserva">Contacto</a></li>
+      <li><a href="../pages/faq.php">Preguntas Frecuentes</a></li>
     </ul>
   </nav>
