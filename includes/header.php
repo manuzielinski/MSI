@@ -14,6 +14,15 @@ $pageTitle = $pageTitle ?? 'UnderTango Club | Milonga y Clases de Tango en Iguaz
 
   <link rel="stylesheet" href="./assets/css/navbar.css">
   <link rel="stylesheet" href="./assets/css/burguer.css">
+
+  <?php if ($page === 'moda'): ?>
+    <link rel="stylesheet" href="./assets/css/moda.css">
+    <link rel="stylesheet" href="./assets/css/moda-fixes.css">
+    <link rel="stylesheet" href="./assets/css/logo-fix.css">
+    <link rel="stylesheet" href="./assets/css/social-icons-fix.css">
+    <link rel="stylesheet" href="./assets/css/footer-fix.css">
+  <?php endif; ?>
+
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
