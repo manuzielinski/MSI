@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendario de Tango</title>
-    <link rel="stylesheet" href="../assets/css/calendario.css">
-    <link rel="stylesheet" href="../assets/css/week.css">
-  </head>
-
 <?php
+// Define la ruta base del proyecto. La barra al final es importante.
+$baseUrl = '/UnderTangoNEW/';
+
 $page = 'calendar';
 $pageTitle = 'Calendario de Tango | UnderTango';
 ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?php echo $pageTitle; ?></title>
+  
+  <!-- Usamos la variable $baseUrl para crear rutas absolutas correctas -->
+  <link rel="stylesheet" href="<?php echo $baseUrl; ?>assets/css/calendario.css">
+  <link rel="stylesheet" href="<?php echo $baseUrl; ?>assets/css/week.css">
+</head>
+<body> <!-- Añadimos la etiqueta body que faltaba -->
 
 <div class="container">
   <div class="months-header">
@@ -36,7 +41,6 @@ $pageTitle = 'Calendario de Tango | UnderTango';
       <h2 id="month-title">Enero 2025</h2>
     </div>
     
-    <!-- Días de la semana -->
     <div class="week-header">
       <div class="week-day">Lunes</div>
       <div class="week-day">Martes</div>
@@ -48,10 +52,17 @@ $pageTitle = 'Calendario de Tango | UnderTango';
     </div>
     
     <div class="calendar-grid" id="calendar-grid">
-      <!-- Aquí irán los días del mes generados dinámicamente por JS -->
+      <!-- Generado por JS -->
     </div>
   </div>
 </div>
 
-<script src="../assets/js/calendario.js"></script>
+<script>
+  const BASE_URL = '/UnderTangoNEW/'; 
+</script>
 
+<!-- Ahora cargamos el script de JavaScript -->
+<script src="<?php echo $baseUrl; ?>assets/js/calendario.js"></script>
+
+</body>
+</html>
